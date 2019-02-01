@@ -1,3 +1,9 @@
-<p>
-  random-quote works!
-</p>
+<section *ngIf="fetchedQuote else loading">
+  <p>
+    {{ fetchedQuote.value }}
+  </p>
+  <button (click)="refreshQuote()">More Norris!</button>
+</section>
+<ng-template #loading>
+  ...loading
+</ng-template>
