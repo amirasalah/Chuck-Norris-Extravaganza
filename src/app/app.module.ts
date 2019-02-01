@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { RandomQuoteComponent } from './random-quote/random-quote.component';
-import { AvailableCategoriesComponent } from './available-categories/available-categories.component';
+import { RandomQuoteComponent } from '../app/Random Quote/random-quote.component';
+import { AvailableCategoriesComponent } from '../app/Available Categories/available-categories.component';
 import { HeaderComponent } from './header/header.component';
-import { TwitterRelatedComponent } from './twitter-related/twitter-related.component';
-import { GiphyRelatedComponent } from './giphy-related/giphy-related.component';
+import { TwitterRelatedComponent } from '../app/Social Components/Twitter Related/twitter-related.component';
+import { GiphyRelatedComponent } from '../app/Social Components/Giphy Related/giphy-related.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GiphyRelatedComponent } from './giphy-related/giphy-related.component';
     AvailableCategoriesComponent,
     HeaderComponent,
     TwitterRelatedComponent,
-    GiphyRelatedComponent
+    GiphyRelatedComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

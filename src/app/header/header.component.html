@@ -1,3 +1,21 @@
-<p>
-  header works!
-</p>
+<header>
+  <section class="search_bar">
+    <form>
+      <input
+        type="text"
+        placeholder="Select a category for an EPIC Chuck quote "
+      />
+    </form>
+  </section>
+  <nav class="navigation_links">
+    <ul>
+      <li [routerLink]="['/']" routerLinkActive="chuck-active">Chuck Home</li>
+      <li [routerLink]="['/random']" routerLinkActive="chuck-active">
+        Chuck Quotes Generator
+      </li>
+      <li [routerLink]="['/categories']" routerLinkActive="chuck-active">
+        Chuck Categories
+      </li>
+    </ul>
+  </nav>
+</header>
