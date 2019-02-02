@@ -1,14 +1,10 @@
-<section *ngIf="searchResults; else loading">
+<section class="search_results" *ngIf="searchResults; else loading">
   <h3>
-    Total {{ searchWord.category | uppercase }} quotes:
-    {{ searchResults.total }}
+    {{ searchWord.category | uppercase }} quotes
   </h3>
   <ul>
-    <li *ngFor="let quote of searchResults.result">
-      <strong><img src="{{ quote.icon_url }}" />{{ quote.value }}</strong>
-      <p>
-        <a href="{{ quote.url }}" target="_blank">check it out!</a>
-      </p>
+    <li *ngFor="let quote of searchResults.result; let i = index">
+      <p [ngStyle]="{'background': generateBackground()}" *ngIf="i <= 5">{{ quote.value }}</p>
     </li>
   </ul>
 </section>

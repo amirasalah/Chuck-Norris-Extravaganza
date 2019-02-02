@@ -2,7 +2,7 @@
   <a [routerLink]="['/']"><img src="../../assets/dribbble_chuck.jpg"></a>
   <nav class="navigation_links">
     <ul>
-      <li [routerLink]="['/']" routerLinkActive="chuck-active">Chuck Home</li>
+      <li [routerLink]="['/']" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="chuck-active">Chuck Home</li>
       <li [routerLink]="['/random']" routerLinkActive="chuck-active">
         Chuck Quotes Generator
       </li>

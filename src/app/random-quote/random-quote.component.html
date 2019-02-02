@@ -1,4 +1,4 @@
-<section *ngIf="fetchedQuote else loading">
+<section class="fetched_quotes" *ngIf="fetchedQuote; else loading">
   <p>
     {{ fetchedQuote.value }}
   </p>

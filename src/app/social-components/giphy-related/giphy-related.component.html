@@ -1,4 +1,4 @@
-<section *ngIf="randomGiphs else loading">
+<section class="random_gifs" *ngIf="randomGiphs else loading">
   <ul >
     <li *ngFor="let gif of randomGiphs.data">
       <img src ={{gif.images.downsized_medium.url}}/>
