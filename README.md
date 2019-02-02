@@ -1,5 +1,7 @@
 # Chuck Norris Extravaganza
 
+> Angular 7 Application for the Love of Chuck!
+
 ## Application Home View
 
 ![Application Home View ](https://raw.githubusercontent.com/amirasalah/Chuck-Norris-Extravaganza/master/src/assets/screencapture-localhost-4200-2019-02-02-18_05_33.jpg)
