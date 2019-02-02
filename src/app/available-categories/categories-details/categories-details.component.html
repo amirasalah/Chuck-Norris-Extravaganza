@@ -1,15 +1,17 @@
-<section *ngIf="searchResults else loading">
-  <h3>Total quotes: {{ searchResults.total }}</h3>
+<section *ngIf="searchResults; else loading">
+  <h3>
+    Total {{ searchWord.category | uppercase }} quotes:
+    {{ searchResults.total }}
+  </h3>
   <ul>
     <li *ngFor="let quote of searchResults.result">
-      <strong>{{ quote.value }}</strong>
-      <div>
-        <img src="{{ quote.icon_url }}" />
+      <strong><img src="{{ quote.icon_url }}" />{{ quote.value }}</strong>
+      <p>
         <a href="{{ quote.url }}" target="_blank">check it out!</a>
-      </div>
+      </p>
     </li>
   </ul>
 </section>
 <ng-template #loading>
-    ...loading
-  </ng-template>
+  ...loading
+</ng-template>

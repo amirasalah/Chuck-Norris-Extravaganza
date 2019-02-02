@@ -1,3 +1,10 @@
-<p>
-  giphy-related works!
-</p>
+<section *ngIf="randomGiphs else loading">
+  <ul >
+    <li *ngFor="let gif of randomGiphs.data">
+      <img src ={{gif.images.downsized_medium.url}}/>
+    </li>
+  </ul>
+</section>
+<ng-template #loading>
+  ...loading
+</ng-template>

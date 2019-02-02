@@ -1,5 +1,8 @@
-<ul *ngIf="categories">
+<ul *ngIf="categories else loading">
   <li *ngFor="let category of categories">
     <a routerLink="/categories/{{category}}" routerLinkActive="router-link-active" >{{ category }}</a>
   </li>
 </ul>
+<ng-template #loading>
+  ...loading
+</ng-template>

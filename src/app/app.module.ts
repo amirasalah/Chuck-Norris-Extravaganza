@@ -6,7 +6,6 @@ import { AppComponent } from "./app.component";
 import { RandomQuoteComponent } from "../app/random-quote/random-quote.component";
 import { AvailableCategoriesComponent } from "../app/available-categories/available-categories.component";
 import { HeaderComponent } from "../app/header/header.component";
-import { TwitterRelatedComponent } from "../app/social-components/twitter-related/twitter-related.component";
 import { GiphyRelatedComponent } from "../app/social-components/giphy-related/giphy-related.component";
 import { HomeComponent } from "../app/home/home.component";
 import { CategoriesDetailsComponent } from '../app/available-categories/categories-details/categories-details.component';
@@ -17,7 +16,6 @@ import { CategoriesDetailsComponent } from '../app/available-categories/categori
     RandomQuoteComponent,
     AvailableCategoriesComponent,
     HeaderComponent,
-    TwitterRelatedComponent,
     GiphyRelatedComponent,
     HomeComponent,
     CategoriesDetailsComponent
