@@ -1,6 +1,8 @@
 # Chuck Norris Extravaganza
 
 > Angular 7 Application for the Love of Chuck!
+> Used ApIs 
+Chuck Norris: (https://rapidapi.com/matchilling/api/chuck-norris?endpoint=581c47aee4b0debc0b98c2b2) 
 
 ## Application Home View
 
