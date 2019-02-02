@@ -1,0 +1,15 @@
+<section *ngIf="searchResults else loading">
+  <h3>Total quotes: {{ searchResults.total }}</h3>
+  <ul>
+    <li *ngFor="let quote of searchResults.result">
+      <strong>{{ quote.value }}</strong>
+      <div>
+        <img src="{{ quote.icon_url }}" />
+        <a href="{{ quote.url }}" target="_blank">check it out!</a>
+      </div>
+    </li>
+  </ul>
+</section>
+<ng-template #loading>
+    ...loading
+  </ng-template>

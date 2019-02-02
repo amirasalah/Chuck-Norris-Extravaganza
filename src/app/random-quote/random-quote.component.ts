@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { QuoteGeneratorService } from "../Services/Quote Generator Api/quote-generator.service";
+import { QuoteGeneratorService } from "../services/quote-generator-api/quote-generator.service";
 @Component({
   selector: "app-random-quote",
   templateUrl: "./random-quote.component.html",
@@ -17,6 +17,7 @@ export class RandomQuoteComponent implements OnInit {
       this.fetchedQuote = result;
     });
   }
+
   refreshQuote() {
     this.fetchedQuote = null;
     this.generateQuote();
