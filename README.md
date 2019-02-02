@@ -1,7 +1,8 @@
 # Chuck Norris Extravaganza
 
 > Angular 7 Application for the Love of Chuck, or Fear!
-Used ApIs 
+
+## Used ApIs 
    - Chuck Norris: (https://rapidapi.com/matchilling/api/chuck-norrisendpoint=581c47aee4b0debc0b98c2b2) 
    - Giphy:
    (https://developers.giphy.com/)
