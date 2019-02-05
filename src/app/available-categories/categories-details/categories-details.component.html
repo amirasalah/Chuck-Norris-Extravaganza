@@ -1,10 +1,10 @@
 <section class="search_results" *ngIf="searchResults; else loading">
-  <h3>
-    {{ searchWord.category | uppercase }} quotes
-  </h3>
+  <h3>{{ searchWord.category | uppercase }} quotes</h3>
   <ul>
-    <li *ngFor="let quote of searchResults.result; let i = index">
-      <p [ngStyle]="{'background': generateBackground()}" *ngIf="i <= 5">{{ quote.value }}</p>
+    <li *ngFor="let quote of searchResults.result; let i = index" >
+        <p *ngIf="i<=4" [ngStyle]="{ backgroundColor: generateBackground(i) }">
+          {{ quote.value }}
+        </p>
     </li>
   </ul>
 </section>
