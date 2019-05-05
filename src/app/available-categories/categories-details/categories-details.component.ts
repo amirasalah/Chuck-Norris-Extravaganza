@@ -7,8 +7,8 @@ import { QuoteGeneratorService } from "../../services/quote-generator-api/quote-
   styleUrls: ["./categories-details.component.sass"]
 })
 export class CategoriesDetailsComponent implements OnInit {
-  public searchWord:string;
-  public searchResults:[];
+  public searchWord: any;
+  public searchResults: any;
   constructor(
     private cdr: ChangeDetectorRef,
     private quoteGeneratorService: QuoteGeneratorService,
@@ -25,28 +25,27 @@ export class CategoriesDetailsComponent implements OnInit {
     "#787A8E",
     "#B3B9C4"
   ];
-  public arrayLength:number = this.colors.length;
+  public arrayLength: number = this.colors.length;
   generateBackground(index) {
-    console.log(index)
-    if(index <=5){
+    console.log(index);
+    if (index <= 5) {
       const rand = Math.floor(Math.random() * (this.arrayLength - 1)) + 1;
       console.log(rand, this.colors[rand]);
       return this.colors[rand];
     }
-    
   }
   ngOnInit() {
-    this.activeRoute.params.subscribe(routeParams => {
-      this.searchWord = routeParams;
-      this.quoteGeneratorService
-        .searchCategory(this.searchWord.category)
-        .subscribe(res => {
-          this.searchResults = res;
-        });
-    }).filter((el, index)=> { });
+    this.activeRoute.params
+      .subscribe(routeParams => {
+        this.searchWord = routeParams;
+        this.quoteGeneratorService
+          .searchCategory(this.searchWord.category)
+          .subscribe(res => {
+            this.searchResults = res;
+          });
+      })
   }
   ngAfterViewInit() {
-    console.log(this.cdr.detectChanges())
     this.cdr.detectChanges();
   }
 }
